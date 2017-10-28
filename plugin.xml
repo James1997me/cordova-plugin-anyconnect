@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com-anyconnect-api" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>AnyConnectClient</name>
+  <js-module name="AnyConnectClient" src="www/AnyConnectClient.js">
+    <clobbers target="anyconnectclient" />
+  </js-module>
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="AnyConnectClient">
+        <param name="ios-package" value="AnyConnectClient" />
+      </feature>
+    </config-file>
+    <source-file src="src/ios/AnyConnectClient.swift" />
+  </platform>
+  <platform name="android">
+    <config-file parent="/*" target="res/xml/config.xml">
+      <feature name="AnyConnectClient">
+        <param name="android-package" value="com.otp.plugins.AnyConnectClient" />
+      </feature>
+    </config-file>
+    <source-file src="src/android/AnyConnectClient.java" target-dir="src/com/otp/plugins" />
+  </platform>
+</plugin>

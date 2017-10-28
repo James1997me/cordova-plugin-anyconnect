@@ -1,0 +1,19 @@
+{
+  "name": "cordova-plugin-anyconnect",
+  "version": "0.0.1",
+  "description": "This cordova plugin will interface with AnyConnect",
+  "cordova": {
+    "id": "com-anyconnect-api",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "author": "John Moline",
+  "license": "ISC"
+}
